@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.hencoder.coroutinescamp.CoroutineViewModel" />
+
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+
+            <Button
+                android:id="@+id/http1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onclick"
+                android:text="http1" />
+            <Button
+                android:id="@+id/GlobalScopeHttp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onclick"
+                android:text="全局-网络请求" />
+
+
+
+            <Button
+                android:id="@+id/concurrentHttp2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onclick"
+                android:text="网络请求并发" />
+
+            <Button
+                android:id="@+id/http2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onclick"
+                android:text="顺序执行(对比并发)" />
+
+
+            <Button
+                android:id="@+id/http1Cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="onclick"
+                android:text="http1Cancel" />
+
+
+            <Button
+                android:id="@+id/mathCancelAndJoin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="onclick"
+                android:text="mathCancelAndJoin" />
+
+
+            <Button
+                android:id="@+id/measureTimeMills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="onclick"
+                android:text="顺序计算时间" />
+
+
+            <Button
+                android:id="@+id/SameScopeThrowError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="onclick"
+                android:text="同一个作用域 异常情况下 其他job情况" />
+
+            <Button
+                android:id="@+id/CoroutineExceptionHandlerUse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="onclick"
+                android:text="协程全局捕获异常/场景" />
+
+            <Button
+                android:id="@+id/ThrowErrorMore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="onclick"
+                android:text="多个异常" />
+
+            <Button
+                android:id="@+id/supervisorScopeUse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="onclick"
+                android:text="supervisorScope 情况" />
+
+
+            <Button
+                android:id="@+id/jobState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="jobState" />
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>
