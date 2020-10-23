@@ -1,13 +1,15 @@
 # CoroutineDemo
 kotlin 协程  Demo
 
- 1.基本 状态
- 2.简单取消job
-   2.1取消问题
- 3.异常作用域
- 4.supervisor vs  CoroutineScope
- 5.并发/顺序 好处
- 6.retrofit  and  取消job  如何取消
+
+思考:
+    1.基本 状态
+     2.简单取消job
+       2.1取消问题
+     3.异常作用域
+     4.supervisor vs  CoroutineScope
+     5.并发/顺序 好处
+     6.retrofit  and  取消job  如何取消
 
 
 
